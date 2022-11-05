@@ -22,12 +22,8 @@ public class Ejercicio6 {
         int min = 2147483647;
 
         for (int i = 0; i < 10; i++) {
-            if (array[i] > max) {
-                max = array[i];
-            }
-            if (array[i] < min) {
-                min = array[i];
-            }
+            if (array[i] > max) max = array[i];
+            if (array[i] < min)  min = array[i];
         }
         int[] MaxMin = new int[2];
         MaxMin[0]= min;
