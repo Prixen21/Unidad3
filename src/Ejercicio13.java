@@ -22,7 +22,7 @@ public class Ejercicio13 {
         // asigna notas del segundo alumno
         matriz[1][0] = 7.9;
         matriz[1][1] = 5.2;
-        matriz[1][2] = 6;
+        matriz[1][2] = 5.7;
         matriz[1][3] = 6.3;
         // asigna notas del tercer alumno
         matriz[2][0] = 9.8;
@@ -36,8 +36,8 @@ public class Ejercicio13 {
         double media = 0;
         for (int f = 0; f<3 ; f++){
             for (int c = 0; c<4 ; c++) {
-                if (matriz[f][c] > max) max = matriz[f] [c];
-                if (matriz[f][c] < min) min = matriz[f] [c];
+                if (matriz[f][c] > max) max = matriz[f][c];
+                if (matriz[f][c] < min) min = matriz[f][c];
                 media += matriz[f][c];
             }
             media /= 4;
@@ -49,7 +49,6 @@ public class Ejercicio13 {
              min =  2147483647;
         }
     }
-
     public static void MaxMinMediaAsignatura(double[][] matriz){
         double max = 0;
         double min =  2147483647;
@@ -68,7 +67,6 @@ public class Ejercicio13 {
             max = 0;
             min =  2147483647;
         }
-
     }
     public static void MaxMinMediaCurso(double[][] matriz){
         double max = 0;
@@ -90,13 +88,11 @@ public class Ejercicio13 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduzca la nota: ");
         double nota = sc.nextDouble();
-
         for (int f = 0; f<3 ; f++){
             for (int c = 0; c<4 ; c++) {
                 if(matriz[f][c] == nota) {
                     System.out.printf("El alumno nº%d  en la asignatura nº%d ha sacado %.2f", (f + 1), (c + 1), nota);
                     System.out.println();
-
                 }
             }
         }

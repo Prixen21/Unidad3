@@ -14,7 +14,7 @@ public class Ejercicio9 {
         Scanner sc =new Scanner(System.in);
         for (int i = 0;i < array.length; i++){
             System.out.println("Introduzca la nota del estudiante " + (i+1) +" : ");
-            double aux =sc.nextDouble();
+            double aux = sc.nextDouble();
             if (aux >= 0 ) array[i] = aux;
             else return;
         }
@@ -33,7 +33,7 @@ public class Ejercicio9 {
         double NotaTotal = 0 ;
         double NotaMedia;
         for (double i : array) {
-            NotaTotal = i + NotaTotal;
+            NotaTotal += i ;
         }
         NotaMedia = NotaTotal / numeroAlumnos;
         return NotaMedia;
